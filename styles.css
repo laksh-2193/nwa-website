@@ -243,13 +243,13 @@ p { font-family: var(--sans); }
   position: absolute; inset: 0;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 1.2s var(--ease-out), visibility 0s linear 1.2s;
+  transition: opacity 0.8s var(--ease-out), visibility 0s linear 0.8s;
   z-index: 1;
 }
 .hero-slide.active {
   opacity: 1;
   visibility: visible;
-  transition: opacity 1.2s var(--ease-out), visibility 0s linear 0s;
+  transition: opacity 0.8s var(--ease-out), visibility 0s linear 0s;
   z-index: 2;
 }
 
@@ -316,12 +316,12 @@ p { font-family: var(--sans); }
 .hero-slide.active .hero-cta {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+  transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out);
 }
-.hero-slide.active .hero-eyebrow { transition-delay: 0.35s; }
-.hero-slide.active .hero-title   { transition-delay: 0.50s; }
-.hero-slide.active .hero-sub     { transition-delay: 0.70s; }
-.hero-slide.active .hero-cta     { transition-delay: 0.90s; }
+.hero-slide.active .hero-eyebrow { transition-delay: 0.15s; }
+.hero-slide.active .hero-title   { transition-delay: 0.25s; }
+.hero-slide.active .hero-sub     { transition-delay: 0.40s; }
+.hero-slide.active .hero-cta     { transition-delay: 0.55s; }
 
 .hero-eyebrow {
   display: inline-flex;
@@ -410,7 +410,7 @@ p { font-family: var(--sans); }
   background: var(--gold);
   width: 100%;
   transform: translateX(-100%);
-  animation: hero-progress 7s linear forwards;
+  animation: hero-progress 3s linear forwards;
 }
 @keyframes hero-progress {
   from { transform: translateX(-100%); }

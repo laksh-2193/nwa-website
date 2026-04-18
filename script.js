@@ -103,7 +103,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
   let current = 0;
   let timer = null;
-  const INTERVAL = 7000;
+  const INTERVAL = 3000;
 
   function show(idx) {
     slides.forEach((s, i) => s.classList.toggle('active', i === idx));
