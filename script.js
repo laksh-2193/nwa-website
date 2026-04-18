@@ -1,3 +1,14 @@
+// ===== ACTIVE NAV LINK =====
+(function activeNav() {
+  const path = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const current = path === '' ? 'index.html' : path;
+  document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
+    const href = (a.getAttribute('href') || '').toLowerCase();
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return;
+    if (href === current) a.classList.add('active');
+  });
+})();
+
 // ===== NAVBAR SCROLL EFFECT =====
 const navbar = document.querySelector('.navbar');
 if (navbar) {
