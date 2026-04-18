@@ -7,7 +7,7 @@
   <meta name="description" content="Neurowise Academy Foundation enables teachers to identify neurodivergent children across India, putting interventions in place so every child can reach their potential.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -42,31 +42,93 @@
     <a href="donate.html" class="nav-cta">Donate</a>
   </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg">
-      <img src="images/hero-nirvana-school-wave.jpg" alt="Children waving at school">
+  <!-- HERO CAROUSEL -->
+  <section class="hero" id="hero-carousel">
+
+    <!-- Slide 1 -->
+    <article class="hero-slide active" data-slide="0">
+      <div class="hero-slide-bg">
+        <img src="images/hero-smiley.jpg" alt="Smiling school children" loading="eager">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-overlay-bottom"></div>
+      <div class="hero-content">
+        <div class="container">
+          <span class="hero-eyebrow">Neurowise Academy Foundation</span>
+          <h1 class="hero-title">Every Child Deserves<br>to Be <em>Understood</em></h1>
+          <p class="hero-sub">Creating pathways for every child to thrive through understanding, support, and inclusive education.</p>
+          <a href="donate.html" class="hero-cta">
+            Donate Now
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Slide 2 -->
+    <article class="hero-slide" data-slide="1">
+      <div class="hero-slide-bg">
+        <img src="images/lung-lesson.jpg" alt="Classroom lung lesson" loading="lazy">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-overlay-bottom"></div>
+      <svg class="hero-leaf" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M50 5 Q 85 35 80 70 Q 55 95 25 75 Q 10 45 50 5 Z" fill="#e8b94a"/>
+        <path d="M50 5 Q 50 50 30 80" stroke="#e05b17" stroke-width="1.5" fill="none" opacity="0.5"/>
+      </svg>
+      <div class="hero-content">
+        <div class="container">
+          <span class="hero-eyebrow">Neuroinclusive Classrooms</span>
+          <h1 class="hero-title">Classrooms Where<br>Every <em>Mind</em> Belongs</h1>
+          <p class="hero-sub">&ldquo;No two leaves are alike.&rdquo; &mdash; Gandhi</p>
+          <a href="our-work.html" class="hero-cta">
+            Explore Our Work
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Slide 3 -->
+    <article class="hero-slide" data-slide="2">
+      <div class="hero-slide-bg">
+        <img src="images/choose-to-shine.jpg" alt="Children choose to shine" loading="lazy">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-overlay-bottom"></div>
+      <div class="hero-content">
+        <div class="container">
+          <span class="hero-eyebrow">Choose To Shine</span>
+          <h1 class="hero-title">Confidence, Belonging,<br><em>Potential</em> Realised</h1>
+          <p class="hero-sub">Empowering teachers, supporting families, lifting every child.</p>
+          <a href="why-matters.html" class="hero-cta">
+            Why It Matters
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <div class="hero-dots" role="tablist" aria-label="Carousel">
+      <button class="hero-dot active" data-dot="0" aria-label="Slide 1"></button>
+      <button class="hero-dot" data-dot="1" aria-label="Slide 2"></button>
+      <button class="hero-dot" data-dot="2" aria-label="Slide 3"></button>
     </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <h1>Every Child Deserves<br>to Be Understood</h1>
-      <p>Creating pathways for every child to thrive through understanding, support, and inclusive education.</p>
-      <a href="#support" class="hero-btn">
-        Support Our Work
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-      </a>
-    </div>
+
   </section>
 
   <!-- WHO WE ARE -->
   <section class="who-we-are">
     <div class="container reveal">
-      <span class="section-label">Who We Are</span>
+      <span class="section-label" style="justify-content: center;">Who We Are</span>
       <div class="who-line"></div>
-      <p class="who-text">India has over <strong>350 million students</strong> in its education system. Of these, at least <strong>35 million children</strong> are likely to be silently struggling with learning challenges&mdash;not because they lack intellectual ability, but because they learn differently.</p>
+      <p class="who-text">India has over <strong>350 million students</strong> in its education system. Of these, at least <strong>35 million children</strong><a href="evidence-base.html" class="evidence-link">[source]</a> are likely to be silently struggling with learning challenges&mdash;not because they lack intellectual ability, but because they learn differently.</p>
       <p class="who-text">At the same time, classrooms are often under-resourced, with teachers supporting <strong>at least 50 students per class</strong>. Over time, the gap widens.</p>
-      <p class="who-mission">Our mission is to change that.</p>
-      <p class="who-cta-text">We empower teachers to support neurodivergent learners so every child can reach their potential.</p>
+
+      <div class="who-goal">
+        <span class="who-goal-label">Our Goal</span>
+        <p>To empower teachers to support neurodivergent learners so every child can reach their potential.</p>
+      </div>
     </div>
   </section>
 
@@ -96,7 +158,7 @@
       <div class="section-header reveal">
         <span class="section-label">Our Work</span>
         <h2 class="section-title">What We Do</h2>
-        <p class="section-subtitle">Our work focuses on three interconnected areas that together create lasting change for neurodivergent learners.</p>
+        <p class="section-subtitle">Three interconnected areas that together create lasting change for neurodivergent learners.</p>
       </div>
       <div class="work-grid">
         <div class="work-card reveal">
@@ -133,11 +195,11 @@
   <!-- JOURNEY -->
   <section class="journey">
     <div class="container">
-      <div class="journey-grid">
-        <div class="journey-image reveal">
-          <img src="images/about-us-teacher-student.jpg" alt="Amita Amlani working with a student">
+      <div class="journey-wrap reveal">
+        <div class="journey-image-float">
+          <img src="images/amita-journey.jpg" alt="Amita Amlani">
         </div>
-        <div class="journey-text reveal reveal-d1">
+        <div class="journey-text">
           <span class="section-label">Our Journey</span>
           <h2 class="section-title">A Journey of Purpose</h2>
           <p>Neurowise Academy Foundation was born from a personal journey&mdash;one that began in the United Kingdom and gradually found its purpose in India.</p>
@@ -153,6 +215,16 @@
     </div>
   </section>
 
+  <!-- QUOTE BLOCK -->
+  <section class="quote-section">
+    <div class="container reveal">
+      <blockquote class="big-quote">
+        Every child deserves to be understood. Learning differently is not a deficit &mdash; it is a difference that, when recognised and supported, can become a strength.
+      </blockquote>
+      <div class="big-quote-cite">Our Belief</div>
+    </div>
+  </section>
+
   <!-- WHY IT MATTERS -->
   <section class="why-matters" id="why-matters">
     <div class="why-grid">
@@ -161,10 +233,14 @@
       </div>
       <div class="why-content reveal reveal-d1">
         <span class="section-label">Why Our Work Matters</span>
-        <h2 class="section-title">Closing the Gap</h2>
+        <h2 class="section-title">Bridging the Gap</h2>
         <p>Across India, many children with learning differences are overlooked or misunderstood&mdash;often labelled as &lsquo;slow&rsquo; or &lsquo;careless.&rsquo;</p>
         <p>Most schools do not yet have access to early screening, trained specialists, or inclusive teaching practices, leaving students without the support they need to thrive.</p>
-        <p>Neurowise Academy Foundation works to close this gap by building awareness, equipping educators, and supporting children directly&mdash;creating pathways for every learner to be recognised, understood, and included.</p>
+        <p>Neurowise Academy Foundation works to bridge this gap by building awareness, equipping educators, and supporting children directly&mdash;creating pathways for every learner to be recognised, understood, and included.</p>
+        <a href="why-matters.html" class="link-arrow">
+          Learn more
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </a>
       </div>
     </div>
   </section>
@@ -178,7 +254,10 @@
         <p class="section-subtitle">A structured programme designed to work directly within schools across India, delivering measurable impact for students and teachers.</p>
       </div>
       <div class="program-layout">
-        <div class="reveal">
+        <div class="program-image reveal">
+          <img src="images/early-identification-classroom.jpg" alt="Screening in classroom">
+        </div>
+        <div class="reveal reveal-d1">
           <ul class="program-list">
             <li>
               <span class="check"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
@@ -198,19 +277,9 @@
             </li>
             <li>
               <span class="check"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              <span>Working towards CReSTeD accreditation for partner schools</span>
+              <span>Family engagement sessions building home-school partnerships</span>
             </li>
           </ul>
-        </div>
-        <div class="reveal reveal-d1">
-          <div class="program-coe">
-            <h4>Centre of Excellence</h4>
-            <p>In partnership with Atria University in Bangalore, Neurowise Academy has established a Centre of Excellence&mdash;a hub for workshops, seminars, and training sessions that reach educational institutes across India.</p>
-          </div>
-          <div class="program-coe" style="margin-top: 16px; border-left-color: var(--orange);">
-            <h4>Pilot School Success</h4>
-            <p>The ICAN School in Mysore became the first school in India to achieve full CReSTeD accreditation, demonstrating that world-class learning support provision is achievable in Indian schools.</p>
-          </div>
         </div>
       </div>
     </div>
@@ -220,15 +289,13 @@
   <section class="partners">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Our Partners</span>
+        <span class="section-label">Our Collaborators</span>
         <h2 class="section-title">Working Together for Change</h2>
       </div>
       <div class="partner-grid reveal">
         <div class="partner-tag">Wipro Foundation</div>
         <div class="partner-tag">Makkala Jagriti</div>
         <div class="partner-tag">Azim Premji Foundation</div>
-        <div class="partner-tag">CReSTeD UK</div>
-        <div class="partner-tag">Atria University</div>
       </div>
     </div>
   </section>
@@ -236,45 +303,32 @@
   <!-- SUPPORT -->
   <section class="support" id="support">
     <div class="container">
-      <div class="support-grid">
-        <div class="support-img reveal">
-          <img src="images/smiling-child-portrait.jpg" alt="Smiling child">
-        </div>
-        <div class="reveal reveal-d1">
-          <span class="section-label">Support Our Work</span>
-          <h2 class="section-title">Your Support Enables Real Change</h2>
-          <p class="support-intro">Your support enables early identification, student support, and long-term change in government schools across India.</p>
-          <div class="tiers">
-            <div class="tier">
-              <span class="tier-amt">&#8377;12,500</span>
-              <span class="tier-desc">Support 1 child for 1 year</span>
-            </div>
-            <div class="tier">
-              <span class="tier-amt">&#8377;62,500</span>
-              <span class="tier-desc">Support 5 children for 1 year</span>
-            </div>
-            <div class="tier">
-              <span class="tier-amt">&#8377;1,25,000</span>
-              <span class="tier-desc">Support 10 children for 1 year</span>
-            </div>
-            <div class="tier">
-              <span class="tier-amt">&#8377;6,25,000</span>
-              <span class="tier-desc">Support 1 classroom for 1 year</span>
-            </div>
-            <div class="tier">
-              <span class="tier-amt">&#8377;12,50,000</span>
-              <span class="tier-desc">Support a whole school for 1 year</span>
-            </div>
+      <div class="support-inner">
+        <div class="support-grid">
+          <div class="support-img reveal">
+            <img src="images/smiling-child-portrait.jpg" alt="Smiling child">
           </div>
-          <div class="tax-note">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            80G tax exemption available
+          <div class="reveal reveal-d1">
+            <span class="section-label">Support Our Work</span>
+            <h2 class="section-title">Your Support Enables Real Change</h2>
+            <p class="support-intro">Your support enables early identification, student support, and long-term change in government schools across India.</p>
+            <div class="tiers">
+              <div class="tier"><span class="tier-amt">&#8377;12,500</span><span class="tier-desc">Support 1 child for 1 year</span></div>
+              <div class="tier"><span class="tier-amt">&#8377;62,500</span><span class="tier-desc">Support 5 children for 1 year</span></div>
+              <div class="tier"><span class="tier-amt">&#8377;1,25,000</span><span class="tier-desc">Support 10 children for 1 year</span></div>
+              <div class="tier"><span class="tier-amt">&#8377;6,25,000</span><span class="tier-desc">Support 1 classroom for 1 year</span></div>
+              <div class="tier"><span class="tier-amt">&#8377;12,50,000</span><span class="tier-desc">Support a whole school for 1 year</span></div>
+            </div>
+            <div class="tax-note">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              80G tax exemption available
+            </div>
+            <a href="donate.html" class="btn-donate">
+              Donate Now
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+            </a>
+            <p class="support-tagline">Every child deserves to be understood.</p>
           </div>
-          <p class="support-tagline">Every child deserves to be understood.</p>
-          <a href="#" class="btn-donate">
-            Donate Now
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
-          </a>
         </div>
       </div>
     </div>
@@ -310,16 +364,19 @@
           <ul class="footer-links">
             <li><a href="mailto:info@neurowiseacademy.com">Email Us</a></li>
             <li><a href="donate.html">Donate</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="evidence-base.html">Evidence Base</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
+    </div>
+    <div class="footer-band"></div>
+    <div class="container">
       <div class="footer-bottom">
         <span>&copy; 2026 Neurowise Academy Foundation</span>
         <div class="footer-legal">
           <a href="#">Privacy Policy</a>
-          <a href="#footer">Contact Us</a>
+          <a href="contact.html">Contact Us</a>
         </div>
       </div>
     </div>
